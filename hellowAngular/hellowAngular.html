@@ -1,0 +1,14 @@
+<html ng-app>
+  <body>
+    <div ng-controller="HellowController">
+      <input ng-model="greeting.text">
+      <p>{{greeting.text}}, AngularJs</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script>
+      function HellowController($scope){
+        $scope.greeting = { text: "Hellow"};
+      }
+    </script>
+  </body>
+</html>
